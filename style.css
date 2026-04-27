@@ -1,0 +1,149 @@
+
+.border-black-thick {
+    border-top: 2px solid black;
+}
+
+.more-link {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.arrow {
+    font-size: 24px;
+    line-height: 2;
+    color: #1a6aff;
+}
+
+.section-label {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    cursor: pointer;
+}
+
+.headline-main {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 2.5vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+
+}
+
+.headline-main:hover {
+    cursor: pointer;
+    color: #1a6aff;
+    transition: .3s;
+}
+
+.headline-secondary {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+}
+
+.headline-secondary:hover {
+    cursor: pointer;
+    color: #1a6aff;
+    transition: .3s;
+
+}
+
+.label-opinion {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.05em;
+    text-decoration: none; /* Rimuove l'underline di default */
+    border-bottom: 7px solid red; /* Spessore e colore */
+    padding-bottom: 1px;
+
+}
+
+.summary-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgb(89, 87, 96); /* Grigio medio */
+    cursor: pointer;
+}
+
+.hr-black {
+    border-top: 3px solid #000;
+    margin: 20px 0;
+    opacity: 1;
+}
+
+.vertical-divider {
+    position: relative;
+}
+
+.vertical-divider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: #ccc;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.img-fluid {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.news-img-container {
+    flex: 0 0 25%;      /* L'immagine occupa sempre il 25% della larghezza */
+    min-width: 120px;   /* Impedisce che diventi troppo minuscola */
+    max-width: 255px;   /* Impedisce che diventi troppo grande su desktop */
+}
+
+/* Assicuriamoci che l'immagine segua il contenitore */
+.news-img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.custom-col {
+    width: 25%;
+}
+
+@media (max-width: 767px) {
+    .vertical-divider::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-stack .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-col {
+        width: 50%;
+    }
+}

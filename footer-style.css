@@ -1,0 +1,36 @@
+.footer-container {
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.mega-footer {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+.mega-footer a {
+    text-decoration: none;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.mega-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-end {
+    background-color: #f5f5f5;
+    padding: 40px 80px;
+}
+
+.footer-end a {
+    text-decoration: none;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
