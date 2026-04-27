@@ -18,9 +18,3 @@ Il progetto è organizzato in modo modulare per facilitare la manutenzione:
 - `style.css`: Stile generale per gli articoli e le sezioni principali.
 - `header-style.css`: CSS dedicato esclusivamente alla testata e alla navigazione.
 - `footer-style.css`: CSS dedicato al pié di pagina e alle sezioni informative finali.
-
----
-
-**Studente:** [Spiridon Raluca]  
-**Università degli Studi di Firenze**
-**Anno Accademico:** 2025/2026
